@@ -1,19 +1,9 @@
 import {Button, Input, Text} from '@nextui-org/react';
-import Link from 'next/link';
 import React from 'react';
-import {Breadcrumbs, Crumb, CrumbLink} from '../breadcrumb/breadcrumb.styled';
-import {DotsIcon} from '../icons/accounts/dots-icon';
 import {ExportIcon} from '../icons/accounts/export-icon';
-import {InfoIcon} from '../icons/accounts/info-icon';
-import {TrashIcon} from '../icons/accounts/trash-icon';
-import {HouseIcon} from '../icons/breadcrumb/house-icon';
-import {UsersIcon} from '../icons/breadcrumb/users-icon';
-import {SettingsIcon} from '../icons/sidebar/settings-icon';
 import {Flex} from '../styles/flex';
-import {TableWrapper} from '../table/table';
-import {AddUser} from './add-user';
 
-export const Accounts = () => {
+export const Assets = () => {
    return (
       <Flex
          css={{
@@ -28,7 +18,7 @@ export const Accounts = () => {
          direction={'column'}
       >
 
-         <Text h3>All Accounts</Text>
+         <Text h3>Assets</Text>
          <Flex
             css={{gap: '$8'}}
             align={'center'}
@@ -47,10 +37,10 @@ export const Accounts = () => {
                   css={{width: '100%', maxW: '410px'}}
                   placeholder="Search users"
                />
-               <SettingsIcon />
-               <TrashIcon />
-               <InfoIcon />
-               <DotsIcon />
+               {/*<SettingsIcon />*/}
+               {/*<TrashIcon />*/}
+               {/*<InfoIcon />*/}
+               {/*<DotsIcon />*/}
             </Flex>
             <Flex direction={'row'} css={{gap: '$6'}} wrap={'wrap'}>
                {/*<AddUser />*/}
@@ -60,7 +50,7 @@ export const Accounts = () => {
             </Flex>
          </Flex>
 
-         <TableWrapper />
+         {/*<TableWrapper />*/}
       </Flex>
    );
 };

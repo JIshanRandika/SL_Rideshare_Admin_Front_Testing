@@ -11,6 +11,7 @@ import {useSidebarContext} from '../layout/layout-context';
 import {useRouter} from 'next/router';
 import {CollapseItems} from "./collapse-items";
 import {BalanceIcon} from "../icons/sidebar/balance-icon";
+import {SettingsIcon} from "../icons/sidebar/settings-icon";
 
 export const SidebarWrapper = () => {
    const router = useRouter();
@@ -45,19 +46,71 @@ export const SidebarWrapper = () => {
                      href="/"
                   />
                   <SidebarMenu title="Main Menu">
-                     <SidebarItem
-                        isActive={router.pathname === '/accounts'}
-                        title="Accounts"
-                        icon={<AccountsIcon />}
-                        href="accounts"
-                     />
+                     {/*<SidebarItem*/}
+                     {/*   isActive={router.pathname === '/accounts'}*/}
+                     {/*   title="Accounts"*/}
+                     {/*   icon={<AccountsIcon />}*/}
+                     {/*   href="accounts"*/}
+                     {/*/>*/}
+
                   </SidebarMenu>
                   <CollapseItems
                       icon={<BalanceIcon />}
-                      items={['Banks Accounts', 'Credit Cards', 'Loans']}
-                      title="Balances"
+                      items={['New', 'Accepted', 'Rejected','Half Registered','Need to update']}
+                      title="User Registrations"
                   />
-
+                  <CollapseItems
+                      icon={<BalanceIcon />}
+                      items={['New', 'Accepted', 'Rejected','Half Registered','Need to update']}
+                      title="License Registrations"
+                  />
+                  <CollapseItems
+                      icon={<BalanceIcon/>}
+                      items={['New', 'Accepted', 'Rejected','Half Registered','Need to update']}
+                      title="Vehicle Registrations"
+                  />
+                  <SidebarItem
+                      isActive={router.pathname === '/referees'}
+                      title="Referees"
+                      icon={<SettingsIcon/>}
+                      href="referees"
+                  />
+                  <SidebarItem
+                      title="App Traffic"
+                      icon={<SettingsIcon/>}
+                      isActive={router.pathname === '/appTraffic'}
+                      href="appTraffic"
+                  />
+                  <SidebarItem
+                      title="Transactions"
+                      icon={<SettingsIcon />}
+                      isActive={router.pathname === '/transactions'}
+                      href="transactions"
+                  />
+                  <SidebarItem
+                      title="Assets"
+                      icon={<SettingsIcon />}
+                      isActive={router.pathname === '/assets'}
+                      href="assets"
+                  />
+                  <SidebarItem
+                      title="Adds"
+                      icon={<SettingsIcon />}
+                      isActive={router.pathname === '/adds'}
+                      href="adds"
+                  />
+                  <SidebarItem
+                      title="Notifications"
+                      icon={<SettingsIcon />}
+                      isActive={router.pathname === '/notifications'}
+                      href="notifications"
+                  />
+                  <SidebarItem
+                      title="Offers"
+                      icon={<SettingsIcon />}
+                      isActive={router.pathname === '/offers'}
+                      href="offers"
+                  />
                </Sidebar.Body>
             </Flex>
          </Sidebar>
