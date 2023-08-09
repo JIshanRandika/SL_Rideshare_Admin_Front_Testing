@@ -54,19 +54,38 @@ export const SidebarWrapper = () => {
                      {/*/>*/}
 
                   </SidebarMenu>
-                  <CollapseItems
+                   <CollapseItems
+                       icon={<BalanceIcon />}
+                       items={[
+                           { label: 'New', link: 'offers' },
+                           { label: 'Accepted', link: 'offers' },
+                           { label: 'Rejected', link: 'offers' },
+                           { label: 'Half Registered', link: 'offers' },
+                           { label: 'Need to update', link: 'offers' },
+                       ]}
+                       title="User Registrations"
+                   />
+
+                   <CollapseItems
                       icon={<BalanceIcon />}
-                      items={['New', 'Accepted', 'Rejected','Half Registered','Need to update']}
-                      title="User Registrations"
-                  />
-                  <CollapseItems
-                      icon={<BalanceIcon />}
-                      items={['New', 'Accepted', 'Rejected','Half Registered','Need to update']}
+                      items={[
+                          { label: 'New', link: 'offers' },
+                          { label: 'Accepted', link: 'offers' },
+                          { label: 'Rejected', link: 'offers' },
+                          { label: 'Half Registered', link: 'offers' },
+                          { label: 'Need to update', link: 'offers' },
+                      ]}
                       title="License Registrations"
                   />
                   <CollapseItems
                       icon={<BalanceIcon/>}
-                      items={['New', 'Accepted', 'Rejected','Half Registered','Need to update']}
+                      items={[
+                          { label: 'New', link: 'offers' },
+                          { label: 'Accepted', link: 'offers' },
+                          { label: 'Rejected', link: 'offers' },
+                          { label: 'Half Registered', link: 'offers' },
+                          { label: 'Need to update', link: 'offers' },
+                      ]}
                       title="Vehicle Registrations"
                   />
                   <SidebarItem
