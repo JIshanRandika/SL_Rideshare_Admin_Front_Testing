@@ -57,11 +57,11 @@ export const SidebarWrapper = () => {
                    <CollapseItems
                        icon={<BalanceIcon />}
                        items={[
-                           { label: 'New', link: 'offers' },
-                           { label: 'Accepted', link: 'offers' },
-                           { label: 'Rejected', link: 'offers' },
-                           { label: 'Half Registered', link: 'offers' },
-                           { label: 'Need to update', link: 'offers' },
+                           { label: 'New', link: 'newUsers' },
+                           { label: 'Accepted', link: 'acceptedUsers' },
+                           { label: 'Rejected', link: 'rejectedUsers' },
+                           { label: 'Half Registered', link: 'halfRegisteredUsers' },
+                           { label: 'Need to update', link: 'needToUpdateUsers' },
                        ]}
                        title="User Registrations"
                    />
@@ -69,11 +69,11 @@ export const SidebarWrapper = () => {
                    <CollapseItems
                       icon={<BalanceIcon />}
                       items={[
-                          { label: 'New', link: 'offers' },
-                          { label: 'Accepted', link: 'offers' },
-                          { label: 'Rejected', link: 'offers' },
-                          { label: 'Half Registered', link: 'offers' },
-                          { label: 'Need to update', link: 'offers' },
+                          { label: 'New', link: 'newLicenses' },
+                          { label: 'Accepted', link: 'acceptedLicenses' },
+                          { label: 'Rejected', link: 'rejectedLicenses' },
+                          { label: 'Half Registered', link: 'halfRegisteredLicenses' },
+                          { label: 'Need to update', link: 'needToUpdateLicenses' },
                       ]}
                       title="License Registrations"
                   />
