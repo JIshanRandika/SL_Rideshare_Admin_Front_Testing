@@ -84,9 +84,9 @@ export const CollapseItems = ({icon, items, title}: Props) => {
                 divider={false}
                 showArrow={false}
             >
-                {items.map((item) => (
+                {items.map((item, index) => (
                     <Flex
-                        // key={index}
+                        key={index}
                         direction={'column'}
                         css={{
                             paddingLeft: '$16',

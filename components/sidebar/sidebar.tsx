@@ -80,11 +80,11 @@ export const SidebarWrapper = () => {
                   <CollapseItems
                       icon={<BalanceIcon/>}
                       items={[
-                          { label: 'New', link: 'offers' },
-                          { label: 'Accepted', link: 'offers' },
-                          { label: 'Rejected', link: 'offers' },
-                          { label: 'Half Registered', link: 'offers' },
-                          { label: 'Need to update', link: 'offers' },
+                          { label: 'New', link: 'newVehicles' },
+                          { label: 'Accepted', link: 'acceptedVehicles' },
+                          { label: 'Rejected', link: 'rejectedVehicles' },
+                          { label: 'Half Registered', link: 'halfRegisteredVehicles' },
+                          { label: 'Need to update', link: 'needToUpdateVehicles' },
                       ]}
                       title="Vehicle Registrations"
                   />
